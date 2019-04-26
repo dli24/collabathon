@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Collabathon</title>
 
 </head>
 <body>
@@ -41,27 +41,69 @@
               </div>
             </div> 
         <div class="hero">
+
+            <!-- ================================== -->
+
             <div class="signUp">
+                <div class="formSection">
+                    <form id="newUser">
+                        <div class="form-group">
+                        <label for="first">First Name</label>
+                        </br>
+                        <input type="text" id="firstName" class="firstName" name="first" placeholder="First Name"/>
+                        </div>
+                        <div class="form-group">
+                        <label for="last">Last Name</label>
+                        </br>
+                        <input type="text" id="lastName" class="lastName" name="last" placeholder="Last Name"/>
+                        </div>
+                        <div class="form-group">
+                        <label for="email">Email</label>
+                        </br>
+                        <input type="email" id="email" class="email" name="email" placeholder="example@example.com" />
+                        </div>
+                        <div class="form-group">
+                        <label>We will never send you spam!</label>
+                        </br>
+                        <input type="submit" id="submit" class="submit" name="submit" value="YES, I DON'T WANT TO MISS OUT" />
+                        </div>
+                    </form>
+                    
+                    <div class="container" id="sub-box">
+                            <form id="newRadio">
+                                <input type="radio" id="radio-1-1" name="radio-1-set" class="ui-radio" />
+                                <label for="radio-1-1">1 time a day</label>
+                                    <br/>
+                                    <input type="radio" id="radio-1-3" name="radio-1-set" class="ui-radio" checked />
+                                    <label for="radio-1-3">1 time a week</label>
+                                    <br/>
+                                    <input type="radio" id="radio-1-2" name="radio-1-set" class="ui-radio" />
+                                    <label for="radio-1-2">3 times a week</label>
+                                <div class="flex">
+                                    <a href="#" class="nextButton" ><i class="fas fa-chevron-circle-right"></i></a>
+                                </div>
+                            </form>
+                        </div>
+
+                </div>
                 <button class="signUpStuff"><span>Keep up to date! </span><br/>Sign up to be the first to know!</button>
             </div>
+            <!-- ================================== -->
         </div>
         <div class="stories">
             <h1>Stories</h1>
         </div>
         <div class="section one">
             <div></div>
-            <p>Lorizzle that's the shizzle i saw beyonces tizzles and my pizzle went crizzle sit amizzle, go to hizzle adipiscing go to
-                    hizzle. Sure sapizzle velizzle, mofo volutpizzle, suscipit quizzle, boofron vel, arcu. </p>
+            <p>The eighth and final season of the fantasy drama television series Game of Thrones, produced by HBO, premiered on April 14, 2019. Filming officially began on October 23, 2017 and concluded in July 2018. Unlike the first six seasons that each had ten episodes and the seventh that had seven episodes, the eighth season only has six episodes. Like the previous season, it largely consists of original content not found in George R. R. Martin's A Song of Ice and Fire series and adapts material Martin revealed to the showrunners about the upcoming novels in the series, The Winds of Winter and A Dream of Spring. The season was adapted for television by David Benioff and D. B. Weiss.</p>
         </div>
         <div class="section two">
             <div></div>
-            <p>Lorizzle that's the shizzle i saw beyonces tizzles and my pizzle went crizzle sit amizzle, go to hizzle adipiscing go to
-                        hizzle. Sure sapizzle velizzle, mofo volutpizzle, suscipit quizzle, boofron vel, arcu. </p>
+            <p>His floppy blond mane and soulful blue eyes had threatened to stop teenage hearts around the globe as he slipped from Kate Winslet’s grip and slid into an icy ocean in “Titanic.” The unprecedented box office returns for the romantic drama transformed DiCaprio into a pinup with few equals, but it had also made him a prisoner of its success, hounded by paparazzi and dismissed as a party boy, whose dalliances with models were drawing more attention than his performances.</p>
         </div>
         <div class="section three">
             <div></div>
-            <p>Lorizzle that's the shizzle i saw beyonces tizzles and my pizzle went crizzle sit amizzle, go to hizzle adipiscing go to
-                            hizzle. Sure sapizzle velizzle, mofo volutpizzle, suscipit quizzle, boofron vel, arcu. </p>
+            <p>Elizabeth has held many titles and honorary military positions throughout the Commonwealth, is Sovereign of many orders in her own countries, and has received honours and awards from around the world. In each of her realms she has a distinct title that follows a similar formula: Queen of Jamaica and her other realms and territories in Jamaica, Queen of Australia and her other realms and territories in Australia, etc. In the Channel Islands and Isle of Man, which are Crown dependencies rather than separate realms, she is known as Duke of Normandy and Lord of Mann, respectively. Additional styles include Defender of the Faith and Duke of Lancaster. When in conversation with the Queen, the practice is to initially address her as Your Majesty and thereafter as Ma'am.</p>
         </div>
 
 
@@ -74,6 +116,6 @@
   src="https://code.jquery.com/jquery-3.4.0.js"
   integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
   crossorigin="anonymous"></script>
-    <script src="../public/script/app.js"></script>
+    <script src="./script/app.js"></script>
 </body>
 </html> 

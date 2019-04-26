@@ -3,7 +3,7 @@
     /* border: 1px solid red; */
 }
 body {
-    margin: 0;
+    margin:0;
     padding: 0;
     width: 100vw;
     font-family: 'Lucida Grande' sans-serif;
@@ -19,7 +19,7 @@ body {
 }
 
 .navBar ul{
-    width: 90vw;
+    width: 80vw;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -49,29 +49,145 @@ body {
     width: 100vw;
 
 }
-.signUpStuff{
+/* ===========FORM STUFF */
+ .signUpStuff{
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    opacity: 0.2;
+    opacity: 0.5;
+    background: #FA7268;
+    color: #ffffff;
     border-style: none;
 }
+
 .signUpStuff:hover{
     opacity: 1;
+    background: #FA7268;
+    color: #ffffff;
 }
-.signUp{
+
+.signUpStuff{
 
     position: fixed;
     top: 80%;
     margin-left: 40%;
     font-size: 15px;
 }
+
+
+.formSection{
+    width:60vw;
+    height:50vh;
+    margin-left: 25%;
+    position: fixed;
+    top: 40%;
+    background: #E5E5D8;
+    opacity: .9;
+    display: none;
+}
+.formSection form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newUser{
+    margin-left: 25%;
+}
+
+.form-group input{
+    padding: .3em 5em;
+}
+
+
 .signUp span {
     font-weight: bold;
     font-size: 20px;
+} 
+
+.submit {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background: #434343;
+    color: #ffffff; 
+    padding-left: 10%;
+    width: 30vw;
 }
+/* ===== Displaying the Form*/
+
+#newUser{
+    display: none;
+}
+/* #sub-box{
+    display: none;
+} */
+
+
+/* === */
+#sub-box {
+    padding-top: 2em;
+    width: 80%;
+    /* background: #d8dadb; */
+    /* border: 5px solid lightgray; */
+ }
+ #sub-box label {
+     width: 55%;
+ }
+ 
+ .ui-radio {
+    display: none;
+ }
+ 
+ .ui-radio + label{
+  position: relative;
+  padding-left: 50px;
+  padding-bottom: 12px;
+  /* display: inline-block; */
+ }
+ .ui-radio + label:before {
+    /* background-color: #fff; */
+    border: 1px solid #2c4251;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    content: ' ';
+    width: 30px;
+    height: 30px;
+    top:0px;
+    left:0px;
+ }
+ 
+ .ui-radio:checked + label:after {
+    content: ' ';
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    background: #FA7268;
+    top: 0px;
+    left: 0px;
+ }
+ 
+ .ui-radio:checked + label:before {
+    color: #FA7268;
+ }
+ 
+
+ .fa-chevron-circle-right {
+    font-size: 30px;
+    color: rgb(131, 131, 131);
+    position: relative;
+    border-style: none;
+ 
+ }
+ 
+
+/* ===== */
 .stories h1{
     text-align: center;
     font-size: 3em;
@@ -80,6 +196,24 @@ body {
     margin-bottom: 1em;
 }
 
+.section.one div{
+    background-image: url("../images/got.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.section.two div{
+    background-image: url("../images/hollywood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.section.three div{
+    background-image: url("../images/royal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
 
 
 
@@ -132,6 +266,27 @@ body {
 }
 .signUp span {
     font-size: 15px;
+}
+.section.one div{
+    background-image: url("../images/got.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+.section.two div{
+    background-image: url("../images/hollywood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+.section.three div{
+    background-image: url("../images/royal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+.submit {
+    width: 21em;
 }
 
 }
@@ -195,4 +350,25 @@ body {
     font-size: 13px;
 }
 
+.section.one div{
+    background-image: url("../images/got.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15vh;
+}
+.section.two div{
+    background-image: url("../images/hollywood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15vh;
+}
+.section.three div{
+    background-image: url("../images/royal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15vh;
+}
+.submit {
+    width: 20em;
+}
 }

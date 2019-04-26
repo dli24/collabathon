@@ -3,8 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// View Engine
-app.set('view engine', 'ejs');
+
 //Database
 const db = require('./models');
 
@@ -30,16 +29,63 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req,res)=>{
     res.sendFile("views/index.html", { root: __dirname });
-})
+});
 
 app.get('/subscribe', (req,res)=>{
     res.sendFile("views/subscribe.html",{ root: __dirname});
+});
+
+// app.get('/dashboard', (req, res)=>{
+//   res.sendFile("views/dashboard.html", { root: __dirname});
+// });
+
+app.get('/api/users', (req,res)=>{
+  db.User.find((err, user)=>{
+    res.json(user)
+  });
+});
+
+app.get('/api/users/:id', (req,res)=>{
+  db.User.findById(req.params.id, (err, user)=>{
+    res.json(user)
+  });
+
+});
+
+
+app.post('/api/users', (req, res)=>{
+  const newUser = new db.User({
+    first: req.body.first,
+    last: req.body.last,
+    email: req.body.email
+  })
+  db.User.create(newUser, (err, newUsers)=>{
+      const error = []
+
+    if (!req.body.first){
+      error.push({message: 'Please enter your First name'})
+    }
+    if (!req.body.last){
+      error.push({message: 'Please enter your Last name'})
+    }
+    if (!req.body.email){
+      error.push({message: 'Please enter your Email'})
+    }
+      res.json(newUsers)
+  })
 })
 
+app.put('/api/users/:id', (req, res)=>{
+  db.User.findByIdAndUpdate(req.params.id, req.body, (err, updateUser)=>{
+    res.json(updateUser)
+  })
+})
 
-
-
-
+app.delete('/api/users/:id', (req, res)=>{
+  db.User.findByIdAndDelete(req.params.id, (err, deleteUser)=>{
+    res.json(deleteUser)
+  })
+})
 
 
 
