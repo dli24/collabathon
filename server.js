@@ -35,9 +35,11 @@ app.get('/subscribe', (req,res)=>{
     res.sendFile("views/subscribe.html",{ root: __dirname});
 });
 
-// app.get('/dashboard', (req, res)=>{
-//   res.sendFile("views/dashboard.html", { root: __dirname});
-// });
+app.get('/dashboards', (req, res)=>{
+  res.sendFile("views/dashboards.html", { root: __dirname});
+});
+
+
 
 app.get('/api/users', (req,res)=>{
   db.User.find((err, user)=>{

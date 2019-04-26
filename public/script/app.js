@@ -1,5 +1,4 @@
 const URL = `/api/users/`
-const datas = 'firstName='+ $('#firstName').val() +'&lastName='+$('#lastName')+
 
 function getUser(){
     const apiCall ={
@@ -13,26 +12,6 @@ function getUser(){
 }
 
 
-
-$('#newUser').on('submit', function(e) {
-    e.preventDefault();
-    console.log($(this).serialize());
-    $.ajax({
-        method: 'POST',
-        url: URL,
-        data: $(this).serialize(),
-        success: function(response){
-            console.log(response)
-        },
-        error: function(){
-            console.log("asd")
-        }
-        
-    });
-
- 
-});
-
 $('.signUpStuff').on('click', e => {
     $('.signUpStuff').css('display', 'none');
     $('.formSection').toggle('slow');
@@ -41,8 +20,29 @@ $('.signUpStuff').on('click', e => {
 $('.nextButton').on('click', e =>{
     $('#newRadio').css('display', 'none');
     $('#newUser').toggle('slow');
+});
+
+
+$('.exitButton').on('click', e =>{
+    $('.formSection').toggle('slow');
+    $('.signUpStuff').css('display', 'inline')
 })
 
-$('input#submit.submit').on('click', e =>{
 
-})
+$('#newUser').on('submit', function(e) {
+    e.preventDefault();
+    console.log('something')
+    $.ajax({
+        method: 'POST',
+        url: URL,
+        data: $(this).serialize(),
+        success: function(response){
+        $('#newUser').html(`<div class="pleaseWork"><h2>Yas, Score!</h2><p>You'll be the first one out of your friends to know the lastest news!</p><h4>You will get a confirmation email soon!</h4></div>`)
+    },
+
+        error: function(){
+            console.log("asd")
+        } 
+    }); 
+
+});

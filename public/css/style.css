@@ -66,6 +66,7 @@ body {
     opacity: 1;
     background: #FA7268;
     color: #ffffff;
+    
 }
 
 .signUpStuff{
@@ -79,7 +80,7 @@ body {
 
 .formSection{
     width:60vw;
-    height:50vh;
+    height: 55vh;
     margin-left: 25%;
     position: fixed;
     top: 40%;
@@ -94,7 +95,7 @@ body {
 }
 
 #newUser{
-    margin-left: 25%;
+    margin-left: 30%;
 }
 
 .form-group input{
@@ -115,25 +116,25 @@ body {
     -o-border-radius: 20px;
     background: #434343;
     color: #ffffff; 
-    padding-left: 10%;
-    width: 30vw;
+    width: 26vw;
 }
+
 /* ===== Displaying the Form*/
+
+.exitButton{
+    font-size: 2em;
+    color: grey;
+}
+
 
 #newUser{
     display: none;
-}
-/* #sub-box{
-    display: none;
-} */
-
+};
 
 /* === */
 #sub-box {
     padding-top: 2em;
     width: 80%;
-    /* background: #d8dadb; */
-    /* border: 5px solid lightgray; */
  }
  #sub-box label {
      width: 55%;
@@ -147,10 +148,8 @@ body {
   position: relative;
   padding-left: 50px;
   padding-bottom: 12px;
-  /* display: inline-block; */
  }
  .ui-radio + label:before {
-    /* background-color: #fff; */
     border: 1px solid #2c4251;
     border-radius: 50px;
     display: inline-block;
@@ -185,7 +184,13 @@ body {
     border-style: none;
  
  }
- 
+ /* ====== */
+
+.pleaseWork{
+    margin-top: 2em;
+    text-align: center;
+    width: 60%;
+}
 
 /* ===== */
 .stories h1{
@@ -197,22 +202,47 @@ body {
 }
 
 .section.one div{
-    background-image: url("../images/got.jpg");
+    background-image: url("../images/got.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+.section.one {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
 .section.two div{
-    background-image: url("../images/hollywood.jpg");
+    background-image: url("../images/hollywood.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.section.two {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10%;
 }
 .section.three div{
-    background-image: url("../images/royal.jpg");
+    background-image: url("../images/royal.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.section.three {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10%;
 }
 
 
@@ -268,19 +298,19 @@ body {
     font-size: 15px;
 }
 .section.one div{
-    background-image: url("../images/got.jpg");
+    background-image: url("../images/got.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vh;
 }
 .section.two div{
-    background-image: url("../images/hollywood.jpg");
+    background-image: url("../images/hollywood.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vh;
 }
 .section.three div{
-    background-image: url("../images/royal.jpg");
+    background-image: url("../images/royal.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vh;
@@ -351,24 +381,50 @@ body {
 }
 
 .section.one div{
-    background-image: url("../images/got.jpg");
+    background-image: url("../images/got_mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 15vh;
 }
 .section.two div{
-    background-image: url("../images/hollywood.jpg");
+    background-image: url("../images/hollywood_mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 15vh;
 }
 .section.three div{
-    background-image: url("../images/royal.jpg");
+    background-image: url("../images/royal_mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 15vh;
 }
+
+.section.one {
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+.section.two {
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+.section.three {
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+
 .submit {
     width: 20em;
+}
+.pleaseWork h4{
+    font-size: 10px;
 }
 }
