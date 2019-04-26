@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Lucida Grande' sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+.navbar i {
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+.navBar ul{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin-top:15px;
+}
+.navBar ul li {
+    margin-right: 13%;
+}
+.navBar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.navBar ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.hero{
+    background-image: url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+
+}
+.signUpStuff{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    opacity: 0.2;
+    border-style: none;
+}
+.signUpStuff:hover{
+    opacity: 1;
+}
+.signUp{
+
+    position: fixed;
+    top: 80%;
+    margin-left: 40%;
+    font-size: 15px;
+}
+.signUp span {
+    font-weight: bold;
+    font-size: 20px;
+}
+.stories h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+.pos-f-t{
+    display: none;
+}
+/* ==================800px========= */
+@media only screen and (max-width: 800px){
+body {
+    margin: 0;
+    padding: 0;
+    width: 800px;
+}
+.navbar i {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Lucida Grande', sans-serif;
+    font-size: 16px;
+}
+.navBar ul{
+    justify-content: start;
+    margin-top:15px;
+    margin-right: 5em;
+}
+.navBar ul li {
+    margin-right: 5%;
+}
+
+.hero{
+    background-image: url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+
+}
+.signUp{
+    top: 50%;
+    right: 15%;
+    font-size: 10px;
+}
+.signUp span {
+    font-size: 15px;
+}
+
+}
+
+
+
+
+
+
+
+
+/* ===========================================400px*/
+ 
+@media only screen and (max-width: 400px){
+body {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+}
+.navbar i {
+    display: none;
+}
+.navBar{
+    display: none;
+}
+.pos-f-t{
+    display: inline;
+} 
+
+.bg-dark ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg-dark ul{
+    list-style-type: none;
+}
+
+.bg-dark ul li a{
+    font-family: 'Lucida Grande', sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    color: #ffffff;
+    text-decoration: none;
+} 
+
+.hero{
+    background-image: url("../images/hero_mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+
+}
+.signUp{
+    top: 48%;
+    right: 30%;
+    font-size: 7px;
+}
+.signUp span {
+    font-size: 13px;
+}
+
+}
